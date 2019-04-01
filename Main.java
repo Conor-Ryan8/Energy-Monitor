@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
         BottomNavigationView nav = findViewById(R.id.navigation_bar);
         nav.setOnNavigationItemSelectedListener(navigation_listener);
