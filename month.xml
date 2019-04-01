@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@color/blu">
+
+        <Spinner
+            android:id="@+id/monthSpinner"
+            android:layout_width="150dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
