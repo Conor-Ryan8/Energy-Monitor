@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now:"
+        android:textColor="@android:color/black"
+        android:textSize="35dp"
+        android:layout_above="@id/main_container"
+        android:layout_alignLeft="@id/main_container"
+        android:layout_marginBottom="10dp"/>
+    
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/current_load_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_blue_dark">
+
+            <TextView
+                android:id="@+id/current_load_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Current Load:"/>
+
+            <TextView
+                android:id="@+id/current_load_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="XXXX Watts"/>
+
+            <TextView
+                android:id="@+id/current_load_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="last updated: 00:00"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/current_data_container"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/today_container"
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/holo_blue_dark">
+
+                <TextView
+                    android:id="@+id/today_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Today:"/>
+
+                <TextView
+                    android:id="@+id/today_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0 Kw/h used"/>
+
+                <TextView
+                    android:id="@+id/today_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cost: €00.00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/week_container"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/today_container"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/holo_blue_dark">
+
+            <TextView
+                    android:id="@+id/week_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="This Week:"/>
+
+                <TextView
+                    android:id="@+id/week_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0 Kw/h used"/>
+
+                <TextView
+                    android:id="@+id/week_cost"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cost: €00.00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/month_container"
+                android:orientation="vertical"
+                android:layout_below="@id/today_container"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/month_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="This Month:"/>
+
+                <TextView
+                    android:id="@+id/month_data"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0 Kw/h used"/>
+
+                <TextView
+                    android:id="@+id/month_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cost: €00.00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bill_container"
+                android:orientation="vertical"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/today_container"
+                android:layout_below="@id/today_container"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/bill_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Bill Estimate:"/>
+
+                <TextView
+                    android:id="@+id/bill_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0 Kw/h used"/>
+
+                <TextView
+                    android:id="@+id/bill_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cost: €00.00"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
