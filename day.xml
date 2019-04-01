@@ -5,16 +5,50 @@
     android:background="@android:color/white">
 
     <LinearLayout
-        android:layout_width="150dp"
-        android:layout_height="35dp"
+        android:id="@+id/spinnerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
         android:background="@color/blu">
 
         <Spinner
             android:id="@+id/daySpinner"
             android:layout_width="150dp"
-            android:layout_height="35dp" />
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinnerlayout"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Units (KW/h)"
+            android:textSize="13dp"
+            android:layout_marginLeft="10dp"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/day_chart"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="435dp">
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hours"
+            android:textSize="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"/>
 
     </LinearLayout>
 
