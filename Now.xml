@@ -4,16 +4,8 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Now:"
-        android:textColor="@android:color/black"
-        android:textSize="35dp"
-        android:layout_above="@id/main_container"
-        android:layout_alignLeft="@id/main_container"
-        android:layout_marginBottom="10dp"/>
-    
+
+
     <LinearLayout
         android:id="@+id/main_container"
         android:layout_width="wrap_content"
@@ -23,19 +15,19 @@
 
         <LinearLayout
             android:id="@+id/current_load_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="125dp"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
-            android:background="@android:color/holo_blue_dark">
+            android:background="@color/bluer">
 
             <TextView
                 android:id="@+id/current_load_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="@android:color/white"
-                android:layout_marginBottom="10dp"
+                android:layout_marginVertical="10dp"
                 android:layout_gravity="center_horizontal"
                 android:text="Current Load:"/>
 
@@ -44,7 +36,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
-                android:textSize="25dp"
+                android:textSize="20dp"
+                android:layout_marginVertical="5dp"
                 android:layout_gravity="center_horizontal"
                 android:text="XXXX Watts"/>
 
@@ -52,9 +45,10 @@
                 android:id="@+id/current_load_timestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:textColor="@android:color/white"
-                android:textSize="20dp"
+                android:textSize="15dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
                 android:layout_gravity="center_horizontal"
                 android:text="last updated: 00:00"/>
 
@@ -62,7 +56,7 @@
 
         <RelativeLayout
             android:id="@+id/current_data_container"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal">
@@ -71,16 +65,16 @@
                 android:id="@+id/today_container"
                 android:orientation="vertical"
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="125dp"
                 android:background="@android:color/holo_blue_dark">
 
                 <TextView
                     android:id="@+id/today_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="25dp"
+                    android:layout_marginVertical="5dp"
+                    android:textSize="20dp"
                     android:textColor="@android:color/white"
-                    android:layout_marginBottom="10dp"
                     android:layout_gravity="center_horizontal"
                     android:text="Today:"/>
 
@@ -89,15 +83,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
-                    android:text="0 Kw/h used"/>
+                    android:text="0000 Kw/h"/>
 
                 <TextView
                     android:id="@+id/today_cost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
                     android:text="Cost: €00.00"/>
@@ -109,17 +105,18 @@
                 android:orientation="vertical"
                 android:layout_toRightOf="@id/today_container"
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="125dp"
                 android:layout_marginLeft="10dp"
+
                 android:background="@android:color/holo_blue_dark">
 
             <TextView
                     android:id="@+id/week_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
-                    android:layout_marginBottom="10dp"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
                     android:layout_gravity="center_horizontal"
                     android:text="This Week:"/>
 
@@ -128,9 +125,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
-                    android:text="0 Kw/h used"/>
+                    android:text="0000 Kw/h"/>
 
                 <TextView
                     android:id="@+id/week_cost"
@@ -138,6 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:layout_gravity="center_horizontal"
                     android:text="Cost: €00.00"/>
 
@@ -150,15 +149,15 @@
                 android:background="@android:color/holo_blue_dark"
                 android:layout_marginTop="10dp"
                 android:layout_width="150dp"
-                android:layout_height="150dp">
+                android:layout_height="125dp">
 
                 <TextView
                     android:id="@+id/month_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
-                    android:layout_marginBottom="10dp"
                     android:layout_gravity="center_horizontal"
                     android:text="This Month:"/>
 
@@ -166,16 +165,18 @@
                     android:id="@+id/month_data"
                     android:layout_width="wrap_content"
                     android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="0 Kw/h used"/>
+                    android:text="0000 Kw/h"/>
 
                 <TextView
                     android:id="@+id/month_cost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
                     android:text="Cost: €00.00"/>
@@ -191,15 +192,15 @@
                 android:layout_toRightOf="@id/today_container"
                 android:layout_below="@id/today_container"
                 android:layout_width="150dp"
-                android:layout_height="150dp">
+                android:layout_height="125dp">
 
                 <TextView
                     android:id="@+id/bill_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
-                    android:layout_marginBottom="10dp"
                     android:layout_gravity="center_horizontal"
                     android:text="Bill Estimate:"/>
 
@@ -208,15 +209,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
-                    android:text="0 Kw/h used"/>
+                    android:text="0000 Kw/h"/>
 
                 <TextView
                     android:id="@+id/bill_cost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
+                    android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
                     android:text="Cost: €00.00"/>
