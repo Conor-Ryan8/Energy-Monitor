@@ -4,8 +4,6 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-
-
     <LinearLayout
         android:id="@+id/main_container"
         android:layout_width="wrap_content"
@@ -107,10 +105,9 @@
                 android:layout_width="150dp"
                 android:layout_height="125dp"
                 android:layout_marginLeft="10dp"
-
                 android:background="@android:color/holo_blue_dark">
 
-            <TextView
+                <TextView
                     android:id="@+id/week_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
