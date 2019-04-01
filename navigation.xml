@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_now"
+        android:icon="@drawable/now"
+        android:title="@string/Now" />
+    <item
+        android:id="@+id/navigation_daily"
+        android:icon="@drawable/today"
+        android:title="@string/Daily" />
+    <item
+        android:id="@+id/navigation_weekly"
+        android:icon="@drawable/week"
+        android:title="@string/Weekly" />
+    <item
+        android:id="@+id/navigation_monthly"
+        android:icon="@drawable/month"
+        android:title="@string/Monthly" />
+</menu>
