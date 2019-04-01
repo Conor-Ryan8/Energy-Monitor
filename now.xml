@@ -1,14 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
+?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banner"/>
+
     <LinearLayout
         android:id="@+id/main_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
         android:orientation="vertical">
 
         <LinearLayout
@@ -37,7 +45,7 @@
                 android:textSize="20dp"
                 android:layout_marginVertical="5dp"
                 android:layout_gravity="center_horizontal"
-                android:text="XXXX Watts"/>
+                android:text="1234 Watts"/>
 
             <TextView
                 android:id="@+id/current_load_timestamp"
@@ -48,7 +56,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="10dp"
                 android:layout_gravity="center_horizontal"
-                android:text="last updated: 00:00"/>
+                android:text="last updated: 21:43"/>
 
         </LinearLayout>
 
@@ -84,7 +92,7 @@
                     android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
-                    android:text="0000 Kw/h"/>
+                    android:text="34 Kw/h"/>
 
                 <TextView
                     android:id="@+id/today_cost"
@@ -94,7 +102,7 @@
                     android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
-                    android:text="Cost: €00.00"/>
+                    android:text="Cost: €5.44"/>
 
             </LinearLayout>
 
@@ -125,7 +133,7 @@
                     android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
-                    android:text="0000 Kw/h"/>
+                    android:text="154 Kw/h"/>
 
                 <TextView
                     android:id="@+id/week_cost"
@@ -135,7 +143,7 @@
                     android:textSize="20dp"
                     android:layout_marginVertical="5dp"
                     android:layout_gravity="center_horizontal"
-                    android:text="Cost: €00.00"/>
+                    android:text="Cost: €24.64"/>
 
             </LinearLayout>
 
@@ -166,7 +174,7 @@
                     android:textColor="@android:color/white"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="0000 Kw/h"/>
+                    android:text="552 Kw/h"/>
 
                 <TextView
                     android:id="@+id/month_cost"
@@ -176,7 +184,7 @@
                     android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
-                    android:text="Cost: €00.00"/>
+                    android:text="Cost: €88.32"/>
 
             </LinearLayout>
 
@@ -209,7 +217,7 @@
                     android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
-                    android:text="0000 Kw/h"/>
+                    android:text="1021 Kw/h"/>
 
                 <TextView
                     android:id="@+id/bill_cost"
@@ -219,7 +227,7 @@
                     android:layout_marginVertical="5dp"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center_horizontal"
-                    android:text="Cost: €00.00"/>
+                    android:text="Cost: €163.36"/>
 
             </LinearLayout>
 
