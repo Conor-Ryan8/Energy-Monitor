@@ -1,0 +1,34 @@
+>>> %Run Database_Application.py
+K00211753 - Energy Monitoring Device online
+Duplicate Record Exists: [(17, 1, 16, 20, 4, 2019)]
+>>> %Run Database_Application.py
+K00211753 - Energy Monitoring Device online
+Record < 18 > entered into Database at: 16:13
+>>> %Run Database_Application.py
+K00211753 - Energy Monitoring Device online
+Duplicate Record Exists: [(18, 13, 16, 20, 4, 2019)]
+>>> %Run Database_Application.py
+K00211753 - Energy Monitoring Device online
+All Records: [(1, 1, 13, 20, 4, 2019), (2, 11, 13, 20, 4, 2019), (3, 13, 13, 20, 4, 2019), (4, 14, 13, 20, 4, 2019), (5, 15, 13, 20, 4, 2019), (6, 15, 13, 20, 4, 2019), (7, 22, 13, 20, 4, 2019), (8, 43, 13, 20, 4, 2019), (9, 55, 13, 20, 4, 2019), (10, 56, 13, 20, 4, 2019), (11, 57, 13, 20, 4, 2019), (12, 1, 14, 20, 4, 2019), (13, 21, 14, 20, 4, 2019), (14, 46, 15, 20, 4, 2019), (15, 59, 15, 19, 4, 2019), (16, 0, 16, 19, 4, 2019), (17, 1, 16, 20, 4, 2019), (18, 13, 16, 20, 4, 2019)]
+
+>>> %Run Database_Application.py
+K00211753 - Energy Monitoring Device online
+Most Recent Entry: (13, 16)
+Second Recent Entry: (1, 16)
+Most Recent Timestamp: 16:13
+Second Recent Timestamp: 16:1
+Time Taken: 12 Minutes
+Current Load is: 5000 Watts
+>>> %Run Database_Application.py
+K00211753 - Energy Monitoring Device online
+16kWh Used Today
+>>> %Run Database_Application.py
+K00211753 - Energy Monitoring Device online
+18kWh Used This Month
+>>> %Run Database_Application.py
+K00211753 - Energy Monitoring Device online
+Hourly Consumption for 20/4/2019 is (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0)
+>>> %Run Database_Application.py
+K00211753 - Energy Monitoring Device online
+Daily Consumption for 4/2019 is (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+>>> 
