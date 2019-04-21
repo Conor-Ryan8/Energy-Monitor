@@ -1,0 +1,27 @@
+import socket
+
+Database_Socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+Database_Socket.bind(('',5000))
+
+while True:
+
+    Data, Address = Database_Socket.recvfrom(1024)
+    
+    if 'Now' in str(Data):
+        print('Now Tab Active')
+        
+    if 'Day' in str(Data):
+        print('Day Tab Active')
+
+    if 'Month' in str(Data):
+        print('Month Tab Active')
+        
+        
+        
+        K00211753 - Energy Monitoring Device online
+Day Tab Active
+Month Tab Active
+Day Tab Active
+Now Tab Active
+Day Tab Active
+Month Tab Active
