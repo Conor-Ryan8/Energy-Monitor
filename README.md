@@ -14,8 +14,8 @@ Components:
 
 End Goal:
 
-<img src="pics/goal" width=100% height=100%>
+<img src="pics/goal.jpg" width=100% height=100%>
 
 Overview
 
-<img src="pics/poster" width=100% height=100%>
+<img src="pics/poster.jpg" width=100% height=100%>
