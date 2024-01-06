@@ -8,3 +8,5 @@ College Project
 ![Device](pics/device.jpg)
 
 ![Reading](pics/reading.JPG)
+
+<img src="pics/reading.JPG" width=50% height=50%>
