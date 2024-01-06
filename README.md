@@ -1,12 +1,7 @@
 # Energy-Monitor
 College Project
 
-![System Overview](pics/architecture.jpg)
-
-![Android App](pics/app.png)
-
-![Device](pics/device.jpg)
-
-![Reading](pics/reading.JPG)
-
-<img src="pics/reading.JPG" width=50% height=50%>
+<img src="pics/architecture.jpgg" width=100% height=100%>
+<img src="pics/app.png" width=50% height=50%>
+<img src="pics/device.jpg" width=50% height=50%>
+<img src="pics/reading.JPG" width=75% height=75%>
