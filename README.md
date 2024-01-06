@@ -1,4 +1,4 @@
 # Energy-Monitor
 College Project
 
-![Alt text](pics/overview.jpg)
+![Alt text](pics/architecture.jpg)
