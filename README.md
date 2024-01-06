@@ -7,8 +7,8 @@ College Project
 <img src="pics/reading.JPG" width=75% height=75%>
 
 <p float="left">
-  <img src="pics/app.png" width="100" />
-  <img src="pics/device.jpg" width="100" />
-  <img src="pics/reading.JPG" width="100" />
+  <img src="pics/app.png" width="200" />
+  <img src="pics/device.jpg" width="200" />
+  <img src="pics/reading.JPG" width="200" />
 </p>
 
