@@ -9,5 +9,6 @@ College Project
 <p float="left">
   <img src="pics/app.png" width="100" />
   <img src="pics/device.jpg" width="100" />
+  <img src="pics/reading.JPG" width="100" />
 </p>
 
